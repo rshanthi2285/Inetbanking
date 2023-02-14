@@ -1,0 +1,11 @@
+com\Inetbanking\pageobjects\Loginpage.class
+com\Inetbanking\testcases\Login.class
+com\Inetbanking\utilities\Extentreporting.class
+com\Inetbanking\utilities\Excelutils.class
+com\Inetbanking\utilities\Readconfig.class
+com\Inetbanking\utilities\Screenshot.class
+com\Inetbanking\testcases\Logindatadriven.class
+com\Inetbanking\testcases\Newcustomer.class
+com\Inetbanking\base\Base.class
+com\Inetbanking\pageobjects\Addcustomerpage.class
+com\Inetbanking\utilities\Extentreportings.class
