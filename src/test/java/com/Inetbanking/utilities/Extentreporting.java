@@ -67,6 +67,7 @@ public class Extentreporting extends TestListenerAdapter{
 		try {
 			screenshotpath = Screenshot.CaptureScreenShot1(result.getName());
 			test.fail("screenshot is below:"+test.addScreenCaptureFromPath(screenshotpath));
+			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

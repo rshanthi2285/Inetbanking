@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-11T07:58:35 EST" name="Inetbanking" finished-at="2023-02-11T07:59:50 EST" duration-ms="74536">
+  <suite started-at="2023-04-30T15:42:45 EDT" name="Inetbanking" finished-at="2023-04-30T15:43:53 EDT" duration-ms="68555">
     <groups>
     </groups>
-    <test started-at="2023-02-11T07:58:35 EST" name="Test" finished-at="2023-02-11T07:59:50 EST" duration-ms="74536">
+    <test started-at="2023-04-30T15:42:45 EDT" name="Test" finished-at="2023-04-30T15:43:53 EDT" duration-ms="68555">
       <class name="com.Inetbanking.testcases.Logindatadriven">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@bd4dc25]" started-at="2023-02-11T07:59:02 EST" name="setup" finished-at="2023-02-11T07:59:05 EST" duration-ms="3131" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@52af26ee]" started-at="2023-04-30T15:43:14 EDT" name="setup" finished-at="2023-04-30T15:43:17 EDT" duration-ms="2808" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginddd(java.lang.String, java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@bd4dc25]" started-at="2023-02-11T07:59:07 EST" name="loginddd" data-provider="dp" finished-at="2023-02-11T07:59:12 EST" duration-ms="4928" status="PASS">
+        <test-method signature="loginddd(java.lang.String, java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@52af26ee]" started-at="2023-04-30T15:43:18 EDT" name="loginddd" data-provider="dp" finished-at="2023-04-30T15:43:22 EDT" duration-ms="3887" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -31,10 +31,52 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at com.Inetbanking.testcases.Logindatadriven.loginddd(Logindatadriven.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginddd -->
-        <test-method signature="loginddd(java.lang.String, java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@bd4dc25]" started-at="2023-02-11T07:59:12 EST" name="loginddd" data-provider="dp" finished-at="2023-02-11T07:59:16 EST" duration-ms="4094" status="FAIL">
+        <test-method signature="loginddd(java.lang.String, java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@52af26ee]" started-at="2023-04-30T15:43:22 EDT" name="loginddd" data-provider="dp" finished-at="2023-04-30T15:43:26 EDT" duration-ms="3698" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -92,7 +134,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginddd -->
-        <test-method signature="loginddd(java.lang.String, java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@bd4dc25]" started-at="2023-02-11T07:59:16 EST" name="loginddd" data-provider="dp" finished-at="2023-02-11T07:59:20 EST" duration-ms="4013" status="FAIL">
+        <test-method signature="loginddd(java.lang.String, java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@52af26ee]" started-at="2023-04-30T15:43:26 EDT" name="loginddd" data-provider="dp" finished-at="2023-04-30T15:43:30 EDT" duration-ms="3834" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -150,7 +192,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginddd -->
-        <test-method signature="loginddd(java.lang.String, java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@bd4dc25]" started-at="2023-02-11T07:59:20 EST" name="loginddd" data-provider="dp" finished-at="2023-02-11T07:59:24 EST" duration-ms="4076" status="FAIL">
+        <test-method signature="loginddd(java.lang.String, java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@52af26ee]" started-at="2023-04-30T15:43:30 EDT" name="loginddd" data-provider="dp" finished-at="2023-04-30T15:43:34 EDT" duration-ms="3921" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -208,13 +250,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginddd -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@bd4dc25]" started-at="2023-02-11T07:59:24 EST" name="teardown" finished-at="2023-02-11T07:59:30 EST" duration-ms="5557" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Inetbanking.testcases.Logindatadriven@52af26ee]" started-at="2023-04-30T15:43:34 EDT" name="teardown" finished-at="2023-04-30T15:43:39 EDT" duration-ms="5216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.Inetbanking.testcases.Logindatadriven -->
-      <class name="com.Inetbanking.testcases.Newcustomer">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Newcustomer@25084a1e]" started-at="2023-02-11T07:59:30 EST" name="setup" finished-at="2023-02-11T07:59:33 EST" duration-ms="3041" status="PASS">
+      <class name="com.Inetbanking.testcases.Login">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Login@306e95ec]" started-at="2023-04-30T15:42:45 EDT" name="setup" finished-at="2023-04-30T15:42:52 EDT" duration-ms="6927" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -225,37 +267,124 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test2()[pri:0, instance:com.Inetbanking.testcases.Newcustomer@25084a1e]" started-at="2023-02-11T07:59:33 EST" name="test2" finished-at="2023-02-11T07:59:44 EST" duration-ms="10740" status="FAIL">
+        <test-method signature="test1()[pri:0, instance:com.Inetbanking.testcases.Login@306e95ec]" started-at="2023-04-30T15:42:52 EDT" name="test1" finished-at="2023-04-30T15:43:08 EDT" duration-ms="15454" status="FAIL">
           <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[unexpected alert open: {Alert text : please fill all fields}
-  (Session info: chrome=110.0.5481.77): please fill all fields
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'WINDELL-B6HDFLT', ip: '192.168.0.110', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+              <![CDATA[unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=112.0.5615.138): User or Password is not valid
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d325743d6fc30b63850451e82499b50, getPageSource {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\radkr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55180}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55180/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d325743d6fc30b63850451e82499b50]]>
+Command: [2c25c996d3239374e7b5caf9147620d0, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\radkr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62770}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62770/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c25c996d3239374e7b5caf9147620d0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : please fill all fields}
-  (Session info: chrome=110.0.5481.77): please fill all fields
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: 'WINDELL-B6HDFLT', ip: '192.168.0.110', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=112.0.5615.138): User or Password is not valid
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d325743d6fc30b63850451e82499b50, getPageSource {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.77, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\radkr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55180}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55180/devtoo..., se:cdpVersion: 110.0.5481.77, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d325743d6fc30b63850451e82499b50
+Command: [2c25c996d3239374e7b5caf9147620d0, getTitle {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\radkr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62770}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62770/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2c25c996d3239374e7b5caf9147620d0
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebDriver.getPageSource(RemoteWebDriver.java:409)
-at com.Inetbanking.testcases.Newcustomer.test2(Newcustomer.java:46)
+at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:302)
+at com.Inetbanking.testcases.Login.test1(Login.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Inetbanking.testcases.Login@306e95ec]" started-at="2023-04-30T15:43:08 EDT" name="teardown" finished-at="2023-04-30T15:43:14 EDT" duration-ms="5381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.Inetbanking.testcases.Login -->
+      <class name="com.Inetbanking.testcases.Newcustomer">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Newcustomer@6fd83fc1]" started-at="2023-04-30T15:43:39 EDT" name="setup" finished-at="2023-04-30T15:43:42 EDT" duration-ms="2683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test2()[pri:0, instance:com.Inetbanking.testcases.Newcustomer@6fd83fc1]" started-at="2023-04-30T15:43:42 EDT" name="test2" finished-at="2023-04-30T15:43:47 EDT" duration-ms="5440" status="FAIL">
+          <exception class="org.openqa.selenium.UnhandledAlertException">
+            <message>
+              <![CDATA[unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=112.0.5615.138): User or Password is not valid
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78b6ab9f4b37224473adb485fcb95920, findElement {using=partial link text, value=New Customer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\radkr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62954}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62954/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78b6ab9f4b37224473adb485fcb95920]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
+  (Session info: chrome=112.0.5615.138): User or Password is not valid
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78b6ab9f4b37224473adb485fcb95920, findElement {using=partial link text, value=New Customer}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\radkr\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62954}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62954/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78b6ab9f4b37224473adb485fcb95920
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy24.click(Unknown Source)
+at com.Inetbanking.pageobjects.Addcustomerpage.addnewcus(Addcustomerpage.java:70)
+at com.Inetbanking.testcases.Newcustomer.test2(Newcustomer.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -290,32 +419,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Inetbanking.testcases.Newcustomer@25084a1e]" started-at="2023-02-11T07:59:44 EST" name="teardown" finished-at="2023-02-11T07:59:50 EST" duration-ms="5552" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Inetbanking.testcases.Newcustomer@6fd83fc1]" started-at="2023-04-30T15:43:48 EDT" name="teardown" finished-at="2023-04-30T15:43:53 EDT" duration-ms="5210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.Inetbanking.testcases.Newcustomer -->
-      <class name="com.Inetbanking.testcases.Login">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.Inetbanking.testcases.Login@4efc180e]" started-at="2023-02-11T07:58:35 EST" name="setup" finished-at="2023-02-11T07:58:40 EST" duration-ms="4928" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test1()[pri:0, instance:com.Inetbanking.testcases.Login@4efc180e]" started-at="2023-02-11T07:58:40 EST" name="test1" finished-at="2023-02-11T07:58:56 EST" duration-ms="16088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.Inetbanking.testcases.Login@4efc180e]" started-at="2023-02-11T07:58:57 EST" name="teardown" finished-at="2023-02-11T07:59:02 EST" duration-ms="5625" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.Inetbanking.testcases.Login -->
     </test> <!-- Test -->
   </suite> <!-- Inetbanking -->
 </testng-results>

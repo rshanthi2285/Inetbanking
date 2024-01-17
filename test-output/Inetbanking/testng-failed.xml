@@ -4,6 +4,20 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.Inetbanking.testcases.Login">
+        <methods>
+          <include name="test1"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.Inetbanking.testcases.Login -->
+      <class name="com.Inetbanking.testcases.Logindatadriven">
+        <methods>
+          <include name="setup"/>
+          <include name="loginddd" invocation-numbers="0 1 2 3"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.Inetbanking.testcases.Logindatadriven -->
       <class name="com.Inetbanking.testcases.Newcustomer">
         <methods>
           <include name="setup"/>
@@ -11,13 +25,6 @@
           <include name="test2"/>
         </methods>
       </class> <!-- com.Inetbanking.testcases.Newcustomer -->
-      <class name="com.Inetbanking.testcases.Logindatadriven">
-        <methods>
-          <include name="setup"/>
-          <include name="loginddd" invocation-numbers="1 2 3"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- com.Inetbanking.testcases.Logindatadriven -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Inetbanking] -->
